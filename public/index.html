@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebate Management Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .table-container {
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rebate Management Dashboard</h1>
+    <div class="table-container" id="status-counts">
+        <h2>Status Counts</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Status</th>
+                    <th>Count</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Status counts will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+    <div class="table-container" id="recent-rebate-programs">
+        <h2>Recent Rebate Programs</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Program Name</th>
+                    <th>Rebate Percentage</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Eligibility Criteria</th>
+                    <th>Created At</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Recent rebate programs will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+    <div class="table-container" id="recent-transactions">
+        <h2>Recent Transactions</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Amount</th>
+                    <th>Transaction Date</th>
+                    <th>Rebate Program ID</th>
+                    <th>Created At</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Recent transactions will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+    <div class="table-container" id="recent-rebate-claims">
+        <h2>Recent Rebate Claims</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Transaction ID</th>
+                    <th>Claim Amount</th>
+                    <th>Status</th>
+                    <th>Claim Date</th>
+                    <th>Created At</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Recent rebate claims will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
