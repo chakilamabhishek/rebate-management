@@ -87,8 +87,6 @@
               "type": "object",
               "properties": {
                 "transaction_id": { "type": "integer" },
-                "claim_amount": { "type": "number" },
-                "claim_status": { "type": "string" },
                 "claim_date": { "type": "string", "format": "date" }
               }
             }

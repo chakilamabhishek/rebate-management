@@ -16,6 +16,7 @@ The Rebate Management System API is designed to manage rebate programs, transact
     ```
 
 2. Build and run the Docker containers:
+    refer to a known issue to be fixed.
     ```bash
     docker-compose up --build
     ```
@@ -35,6 +36,14 @@ You are all set!
 ### Todos:
 - Rename `api/rebate-claims` to `reporting` api.
 - Version the APIs.
+
+### Known issues:
+- During an inital docker-compose up --build the service tries to connect to DB, But fail's since postgres DB is not ready.
+- can be fixed with a wait script to see if postgress is up then start the server or try to reconnect on postgres Error's.
+- Fix is just to restart the 
+    ```bash
+    docker-compose up --build
+    ```
 
 ## Additional Features
 
