@@ -10,6 +10,9 @@ COPY package*.json ./
 # Install production dependencies.
 RUN npm install --only=production
 
+# Install PM2 globally
+RUN npm install pm2 -g
+
 # Copy the rest of the application code.
 COPY . .
 
@@ -17,4 +20,4 @@ COPY . .
 EXPOSE 3000
 
 # Run the web service on container startup.
-CMD [ "npm", "start" ]
+CMD [ "npm", "run prod" ]
