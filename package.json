@@ -4,11 +4,11 @@
     "description": "A rebate management system API",
     "main": "src/app.js",
     "scripts": {
-    "start": "pm2 start src/app.js --watch --name rebate-management",
+        "start": "node src/app.js",
         "dev": "nodemon src/app.js",
         "test": "mocha --timeout 10000 'tests/**/*.test.js'",
         "build": "echo 'No build step defined'",
-        "prod": "NODE_ENV=production pm2 start src/app.js --watch --name rebate-management"
+        "prod": "NODE_ENV=production node src/app.js"
     },
     "dependencies": {
         "body-parser": "^1.19.0",
@@ -24,7 +24,6 @@
         "morgan": "^1.10.0",
         "path": "^0.12.7",
         "pg": "^8.6.0",
-        "pm2": "^5.4.3",
         "sinon": "^19.0.2",
         "swagger-ui-express": "^4.1.6",
         "ts-node": "^10.9.2",
